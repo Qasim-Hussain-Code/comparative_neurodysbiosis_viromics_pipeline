@@ -1,0 +1,21 @@
+# Exclude raw sequence streams and target co-assembly entries
+00_READ_FILES/
+00_ASSEMBLY_FILES/
+
+# Exclude pipeline-generated dependency databases
+00_DATABASES/
+
+# Exclude geNomad and CheckV structural output directories
+01_GENOMAD/
+02_CHECK_V/
+
+# Exclude clustering matrices and downstream non-redundant operational files
+03_CLUSTERING/
+
+# Exclude heavy Bowtie2 index keys and binary alignment map folders
+04_READ_MAPPING/
+
+# System specific exclusions and transient log assets
+.DS_Store
+*.log
+scripts/*.log
