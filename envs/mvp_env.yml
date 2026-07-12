@@ -1,0 +1,9 @@
+name: mvp_env
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - mvip
+  - sra-tools=3.1.1
