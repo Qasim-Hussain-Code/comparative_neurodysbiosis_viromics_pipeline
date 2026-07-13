@@ -14,22 +14,20 @@ echo "============================================================"
 echo " Starting Modular Viromics Layer: Initiating mvip Run       "
 echo "============================================================"
 
-# Environment activation safety check
-if [[ "${CONDA_DEFAULT_ENV:-}" != "mvp_env" ]]; then
+# Environment activation safety check adjusted to your local env name
+if [[ "${CONDA_DEFAULT_ENV:-}" != "mvip" ]]; then
     eval "$(conda shell.bash hook)"
-    conda activate mvp_env
+    conda activate mvip
 fi
 
 echo "--> Executing Module 00: Validating Manifest and Folder Structures"
-mvip module_00 --metadata metadata.txt --working_dir "$REPO_ROOT" --skip_install_databases
+mvip MVP_00_set_up_MVP -i "$REPO_ROOT" -m metadata.txt --skip_install_databases
 
 echo "--> Executing Module 01: Extracting and Grading Viral Signatures"
-# Automatically targets the assembly files listed in your manifest map
-mvip module_01 --metadata metadata.txt --working_dir "$REPO_ROOT" --threads "$THREADS"
+mvip MVP_01_run_genomad_checkv -i "$REPO_ROOT" -m metadata.txt --threads "$THREADS"
 
 echo "--> Executing Module 04: Mapping Sequencing Reads to Viral Targets"
-# Maps short-read files back to identified viral templates for quantification
-mvip module_04 --metadata metadata.txt --working_dir "$REPO_ROOT" --threads "$THREADS"
+mvip MVP_04_do_read_mapping -i "$REPO_ROOT" -m metadata.txt --threads "$THREADS"
 
 echo "============================================================"
 echo " Pipeline Processing Complete: Visualizing Folder Matrix   "
