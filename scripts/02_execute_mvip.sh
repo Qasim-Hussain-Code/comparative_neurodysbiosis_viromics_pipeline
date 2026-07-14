@@ -19,13 +19,18 @@ if [[ "${CONDA_DEFAULT_ENV:-}" != "mvip" ]]; then
 fi
 
 echo "--> Executing Module 00: Validating Local Verified Reference Assets"
-# Re-applied the skip flag since your databases are fully functional on disk
 mvip MVP_00_set_up_MVP -i "$REPO_ROOT" -m metadata.txt --skip_install_databases
 
 echo "--> Executing Module 01: Extracting and Grading Viral Signatures"
 mvip MVP_01_run_genomad_checkv -i "$REPO_ROOT" -m metadata.txt --threads "$THREADS"
 
-echo "--> Executing Module 04: Mapping Sequencing Reads to Viral Targets"
+echo "--> Executing Module 02: Merging and Filtering Sequence Summaries"
+mvip MVP_02_filter_genomad_checkv -i "$REPO_ROOT" -m metadata.txt
+
+echo "--> Executing Module 03: Clustering Reference Space into Clustered vOTUs"
+mvip MVP_03_do_clustering -i "$REPO_ROOT" -m metadata.txt --threads "$THREADS"
+
+echo "--> Executing Module 04: Mapping Sequencing Reads to Clustered vOTUs"
 mvip MVP_04_do_read_mapping -i "$REPO_ROOT" -m metadata.txt --threads "$THREADS"
 
 echo "============================================================"
