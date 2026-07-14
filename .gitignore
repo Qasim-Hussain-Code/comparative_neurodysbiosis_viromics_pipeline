@@ -19,3 +19,8 @@
 .DS_Store
 *.log
 scripts/*.log
+
+# ignore .fasta and .txt files
+*.fasta
+*.txt
+*.fna

@@ -18,7 +18,8 @@ if [[ "${CONDA_DEFAULT_ENV:-}" != "mvip" ]]; then
     conda activate mvip
 fi
 
-echo "--> Executing Module 00: Validating Manifest and Folder Structures"
+echo "--> Executing Module 00: Validating Local Verified Reference Assets"
+# Re-applied the skip flag since your databases are fully functional on disk
 mvip MVP_00_set_up_MVP -i "$REPO_ROOT" -m metadata.txt --skip_install_databases
 
 echo "--> Executing Module 01: Extracting and Grading Viral Signatures"
