@@ -26,3 +26,4 @@ scripts/*.log
 *.fna
 *.tsv
 *.faa
+*.fasta
