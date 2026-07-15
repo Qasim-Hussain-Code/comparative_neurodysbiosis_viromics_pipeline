@@ -1,4 +1,4 @@
-name: mvp_env
+name: mvip
 channels:
   - bioconda
   - conda-forge
@@ -6,4 +6,5 @@ channels:
 dependencies:
   - python=3.10
   - mvip
+  - megahit
   - sra-tools=3.1.1

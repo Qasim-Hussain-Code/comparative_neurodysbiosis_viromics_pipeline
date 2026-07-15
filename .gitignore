@@ -1,29 +1,30 @@
-# Exclude raw sequence streams and target co-assembly entries
+# Raw sequence data and co-assembly outputs
 00_READ_FILES/
 00_ASSEMBLY_FILES/
+00_MODIFIED_ASSEMBLY_FILES/
 
-# Exclude pipeline-generated dependency databases
+# Pipeline-generated reference databases
 00_DATABASES/
 
-# Exclude geNomad and CheckV structural output directories
+# geNomad and CheckV structural output
 01_GENOMAD/
 02_CHECK_V/
 
-# Exclude clustering matrices and downstream non-redundant operational files
+# Clustering matrices and non-redundant operational files
 03_CLUSTERING/
 
-# Exclude heavy Bowtie2 index keys and binary alignment map folders
+# Bowtie2 index binaries and alignment maps
 04_READ_MAPPING/
 
-# System specific exclusions and transient log assets
+# vOTU abundance tables
+05_VOTU_TABLES/
+
+# Functional annotation output
+06_FUNCTIONAL_ANNOTATION/
+
+# MEGAHIT intermediate assembly directory
+megahit_coassembly/
+
+# System exclusions
 .DS_Store
 *.log
-scripts/*.log
-
-# ignore .fasta and .txt files
-*.fasta
-*.txt
-*.fna
-*.tsv
-*.faa
-*.fasta
