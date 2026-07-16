@@ -82,7 +82,7 @@ Run the installation script to build the Conda environment and fetch the local d
 ./scripts/00_install.sh
 ```
 
-### 2. Fetch Raw Reads and Perform De Novo Co-Assembly
+### 2. Fetch Raw Reads and Perform _De Novo_ Co-Assembly
 Download the cohort datasets and build the assembly:
 ```bash
 ./scripts/01_provision_data.sh
