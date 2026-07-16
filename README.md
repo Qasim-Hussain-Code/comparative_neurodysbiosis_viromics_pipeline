@@ -109,4 +109,3 @@ conda activate mvip
 
 This software is distributed under the terms of the MIT License. Refer to the [LICENSE](LICENSE) file for further details.
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
