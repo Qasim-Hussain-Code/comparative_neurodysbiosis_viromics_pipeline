@@ -1,6 +1,5 @@
-# Comparative Neurodysbiosis Metagenomic and Viromics Pipeline
-
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+# Comparative Neurodysbiosis Metagenomic and Viromics Pipeline
 
 This repository implements a scientifically rigorous, modular viromics analysis pipeline to identify, grade, cluster, and profile viral communities from metagenomic datasets. The target application of this workflow is the comparative study of the gut virome associated with neurodevelopmental conditions, using shotgun metagenomics data from mouse models colonized with human donor microbiota.
 
