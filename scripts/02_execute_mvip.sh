@@ -24,7 +24,7 @@ if [[ "${CONDA_DEFAULT_ENV:-}" != "mvip" ]]; then
     conda activate mvip
 fi
 
-# ── Pre-flight check: verify the assembly is genuine ──
+# ── Pre-flight check: verify the assembly ──
 ASSEMBLY="$REPO_ROOT/00_ASSEMBLY_FILES/gut_scaffolds.fna"
 if [ ! -f "$ASSEMBLY" ]; then
     echo "ERROR: Assembly file not found at $ASSEMBLY"
