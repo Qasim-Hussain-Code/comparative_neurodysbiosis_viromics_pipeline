@@ -107,6 +107,4 @@ conda activate mvip
 
 ## License
 
-This software is distributed under the terms of the MIT License. Refer to the [LICENSE](LICENSE) file located in the root directory for the complete terms and conditions.
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+This software is distributed under the terms of the MIT License. Refer to the [LICENSE](LICENSE) file for further details.
