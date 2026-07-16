@@ -2,6 +2,8 @@
 
 # Comparative Neurodysbiosis Metagenomic and Viromics Pipeline
 
+![Modular Viromics Pipeline Workflow](workflow.png)
+
 This repository implements a modular and reproducible bioinformatics pipeline designed for the extraction, quality assessment, clustering, and profiling of viral communities (the virome) from shotgun metagenomic datasets. The primary application of this workflow is the comparative analysis of gut viral populations associated with neurodevelopmental conditions, utilizing metagenomic datasets derived from gnotobiotic mouse models.
 
 ## Scientific Scope and Metagenomic Framework
@@ -106,3 +108,5 @@ conda activate mvip
 ## License
 
 This software is distributed under the terms of the MIT License. Refer to the [LICENSE](LICENSE) file for further details.
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
