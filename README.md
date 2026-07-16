@@ -91,4 +91,3 @@ conda activate mvip
 ./scripts/02_execute_mvip.sh
 ```
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
