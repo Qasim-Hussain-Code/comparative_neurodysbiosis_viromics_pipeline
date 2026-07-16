@@ -95,15 +95,13 @@ conda activate mvip
 
 ## References
 
-1. Sharon, G., Cruz, N. J., Kang, D. W., Gandal, M. J., Wang, B., Kim, J. R., Sweredoski, M. J., Moradian, A., Kiebish, M. A., Garbett, K. G., Schmid, D. G., Harpoole, K., Chang, J. W., Hsiao, E. Y., Geschwind, D. H., & Mazmanian, S. K. (2019). Human gut microbiota from Autism Spectrum Disorder promote behavioral symptoms in mice. *Cell*, 177(3), 600-618.e17. https://doi.org/10.1016/j.cell.2019.01.040
+1. Camargo, A. P., Roux, S., Schulz, F., Babinski, M., Xu, Y., Hu, B., Chain, P. S. G., Nayfach, S., & Kyrpides, N. C. (2024). Identification of mobile genetic elements with geNomad. *Nature Biotechnology*, 42(6), 841-845. https://doi.org/10.1038/s41587-023-01953-y
 
-2. Camargo, A. P., Roux, S., Schulz, F., Babinski, M., Xu, Y., Hu, B., Chain, P. S. G., Nayfach, S., & Kyrpides, N. C. (2024). Identification of mobile genetic elements with geNomad. *Nature Biotechnology*, 42(6), 841-845. https://doi.org/10.1038/s41587-023-01953-y
+2. Nayfach, S., Camargo, A. P., Schulz, F., Roux, S., & Kyrpides, N. C. (2021). CheckV assesses the quality and completeness of metagenome-assembled viral genomes. *Nature Biotechnology*, 39(5), 578-585. https://doi.org/10.1038/s41587-020-00774-7
 
-3. Nayfach, S., Camargo, A. P., Schulz, F., Roux, S., & Kyrpides, N. C. (2021). CheckV assesses the quality and completeness of metagenome-assembled viral genomes. *Nature Biotechnology*, 39(5), 578-585. https://doi.org/10.1038/s41587-020-00774-7
+3. Li, D., Liu, C. M., Luo, R., Sadakane, K., & Lam, T. W. (2015). MEGAHIT: an ultra-fast single-node solution for large and complex metagenomics assembly via succinct de Bruijn graph. *Bioinformatics*, 31(10), 1674-1676. https://doi.org/10.1093/bioinformatics/btv033
 
-4. Li, D., Liu, C. M., Luo, R., Sadakane, K., & Lam, T. W. (2015). MEGAHIT: an ultra-fast single-node solution for large and complex metagenomics assembly via succinct de Bruijn graph. *Bioinformatics*, 31(10), 1674-1676. https://doi.org/10.1093/bioinformatics/btv033
-
-5. Langmead, B., & Salzberg, S. L. (2012). Fast gapped-read alignment with Bowtie 2. *Nature Methods*, 9(4), 357-359. https://doi.org/10.1038/nmeth.1923
+4. Langmead, B., & Salzberg, S. L. (2012). Fast gapped-read alignment with Bowtie 2. *Nature Methods*, 9(4), 357-359. https://doi.org/10.1038/nmeth.1923
 
 ## License
 
