@@ -1,26 +1,36 @@
 # Raw sequence data and co-assembly outputs
-00_READ_FILES/
-00_ASSEMBLY_FILES/
-00_MODIFIED_ASSEMBLY_FILES/
+00_READ_FILES/*
+!00_READ_FILES/README.md
+00_ASSEMBLY_FILES/*
+!00_ASSEMBLY_FILES/README.md
+00_MODIFIED_ASSEMBLY_FILES/*
+!00_MODIFIED_ASSEMBLY_FILES/README.md
 
 # Pipeline-generated reference databases
-00_DATABASES/
+00_DATABASES/*
+!00_DATABASES/README.md
 
 # geNomad and CheckV structural output
-01_GENOMAD/
-02_CHECK_V/
+01_GENOMAD/*
+!01_GENOMAD/README.md
+02_CHECK_V/*
+!02_CHECK_V/README.md
 
 # Clustering matrices and non-redundant operational files
-03_CLUSTERING/
+03_CLUSTERING/*
+!03_CLUSTERING/README.md
 
 # Bowtie2 index binaries and alignment maps
-04_READ_MAPPING/
+04_READ_MAPPING/*
+!04_READ_MAPPING/README.md
 
 # vOTU abundance tables
-05_VOTU_TABLES/
+05_VOTU_TABLES/*
+!05_VOTU_TABLES/README.md
 
 # Functional annotation output
-06_FUNCTIONAL_ANNOTATION/
+06_FUNCTIONAL_ANNOTATION/*
+!06_FUNCTIONAL_ANNOTATION/README.md
 
 # MEGAHIT intermediate assembly directory
 megahit_coassembly/
@@ -28,3 +38,5 @@ megahit_coassembly/
 # System exclusions
 .DS_Store
 *.log
+*Summary_Report.txt
+MVP_00_Summary_Report.txt
