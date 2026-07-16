@@ -18,7 +18,7 @@ To study the viral component of this system, the pipeline performs comparative v
 
 Analyzing viral signals within complex metagenomes requires rigorous computational validation to prevent artifactual findings:
 
-* **_De Novo_ Co-Assembly:** Standard metagenomic workflows can be biased by mapping reads to database references that may not be present in the sample. This pipeline uses MEGAHIT to construct a de novo co-assembly from the raw sequencing reads. This approach allows the identification of native and novel viral contigs directly from the cohorts.
+* **_De Novo_ Co-Assembly:** Standard metagenomic workflows can be biased by mapping reads to database references that may not be present in the sample. This pipeline uses MEGAHIT to construct a _de novo_ co-assembly from the raw sequencing reads. This approach allows the identification of native and novel viral contigs directly from the cohorts.
 * **Validation of Read Recruitment:** To verify that the assembled viral contigs are biologically active in the samples, raw reads are mapped back to the assemblies. High mapping rates validate that the reconstructed viral genomes are representative of the physical community sequenced.
 * **Non-Redundant Sequence Clustering:** Predicted viral sequences are clustered using BLASTn (95 percent average nucleotide identity over 85 percent alignment fraction) to collapse redundant sequences into stable viral operational taxonomic units (vOTUs).
 
